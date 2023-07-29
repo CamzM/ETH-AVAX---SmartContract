@@ -1,6 +1,6 @@
 # ETH-AVAX---SmartContract
 
-This Solidity program is a simple "smartContract" program written in the Solidity programming language. The purpose of this program is to create a contract that implements the require(), assert(), and revert() statements. This program has two functions for setting the value to a variable named token. The token variable's numeric value can be updated by calling on these functions. With the three statements, the program confirms that the new value will be greater than zero and distinct from the previous value. 
+This Solidity program is a simple "smartContract" program written in the Solidity programming language. The purpose of this program is to create a contract that implements the require(), assert(), and revert() statements. This program has two functions for setting the value to a variable named token. The token variable's numeric value can be updated by calling on these functions. With the three statements, the program confirms that the new value will be greater than zero and distinct from the previous value. The transaction is reversed if any of these requirements are not satisfied.
 
 ## Description
 
