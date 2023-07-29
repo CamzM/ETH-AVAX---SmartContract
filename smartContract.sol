@@ -7,20 +7,19 @@ pragma solidity 0.8.18;
 contract smartContract {
     uint public token;
 
-    function setValue(uint _token) external {
-        require(_token > 0, "Inputted token value must be greater than zero.");
+    function setTokenVal(uint _value) external {
+        require(_value > 0, "Inputted token value must be greater than zero.");
         
-        assert(_token != token);
+        assert(_value != token);
 
-        token = _token;
+        token = _value;
     }
 
-    function valueRevert(uint _token) external {
-        if (_token == token) {
+    function revertTokenVal(uint _value) external {
+        if (_value == token) {
             revert("New token value must be different from the current token value.");
         }
 
-        token = _token;
+        token = _value;
     }
 }
-
