@@ -8,7 +8,7 @@ contract smartContract {
     uint public token;
 
     function setTokenVal(uint _value) external {
-        require(_value > 0, "Inputted token value must be greater than zero.");
+        require(_value > 50, "Inputted token value must be greater than zero.");
         
         assert(_value != token);
 
